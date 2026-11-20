@@ -277,6 +277,12 @@ html[data-theme="erpgulf"] .frappe-list {
   box-shadow: none;
 }
 
+// Shortcut cards are short, so the 16px card radius makes them look like pills.
+// Use the button and input radius instead.
+html[data-theme="erpgulf"] .widget.shortcut-widget-box {
+  border-radius: 10px;
+}
+
 // Forms: a white sheet on the grey page with no outline. The border drew a line under the
 // last field, right above Comments. Leave room below the last field instead.
 html[data-theme="erpgulf"] .form-page {
