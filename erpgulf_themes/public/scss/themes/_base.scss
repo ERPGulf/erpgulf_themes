@@ -113,7 +113,8 @@ html[data-theme="claudionnight"] body {
 // Dropdowns with nothing chosen show their label as an overlay pinned 3px from the top, which
 // only suits Frappe's default box height. Centre it on the box instead.
 @each $root in $theme-themes {
-  #{$root} .frappe-control[data-fieldtype="Select"] .placeholder {
+  #{$root} .frappe-control[data-fieldtype="Select"] .placeholder,
+  #{$root} .frappe-control[data-fieldtype="Select"] .placeholder.xs {
     top: 50%;
     transform: translateY(-50%);
   }
